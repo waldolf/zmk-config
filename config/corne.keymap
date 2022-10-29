@@ -81,7 +81,7 @@
 //   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp DEL
-   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp LANG1 &kp LANG2          &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PGUP &trans
+   &kp LSHFT &trans        &trans       &trans       &kp LANG1    &kp LANG2      &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PGUP &trans
    &kp LCTRL  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &kp PGDN &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
@@ -95,8 +95,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp TILDE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp COLON &kp EQUAL &kp MINUS       &kp LBKT &kp RBKT &kp BSLH
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp GRAVE &kp PLUS  &kp KP_MULTIPLY &kp LBRC &kp RBRC &kp SLASH
+   &kp F1 &kp F2   &kp F3 &kp F4   &kp F5   &kp F6       &kp COLON &kp EQUAL &kp MINUS       &kp LBKT &kp RBKT &kp BSLH
+   &kp F7 &kp F8   &kp F9 &kp F10  &kp F11  &kp F12      &kp GRAVE &kp PLUS  &kp KP_MULTIPLY &kp LBRC &kp RBRC &kp SLASH
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
@@ -105,7 +105,7 @@
                     bindings = <
     &bt BT_CLR   &trans       &trans         &trans       &trans      &trans     &kp F1     &kp F2     &kp F3   &kp F4  &kp F5  &kp F6
     &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2   &bt BT_SEL 1 &bt BT_SEL 0 &trans    &kp F7     &kp F8     &kp F9   &kp F10 &kp F11 &kp F12
-    &reset     &bootloader     &trans     &kp C_MUTE &trans     &trans                &trans     &trans     &trans     &trans     &trans     &trans
+    &reset     &bootloader     &trans     &kp C_MUTE &trans     &trans                &trans     &trans     &trans     &trans     &bootloader     &trans
                                                 &trans     &trans     &trans     &out O_TOG &trans     &trans
                     >;
                 };
